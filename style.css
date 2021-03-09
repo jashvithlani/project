@@ -46,16 +46,14 @@ body{
 #endtest button{
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
-    display: inline-block;
-    position: relative;
+   
     background-color: rgb(237, 108, 57);
     border-radius: 30px;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 20px;
-  margin-top: 20px;
-  margin-left: 1110px;
+  
   width: 160px;
   
   cursor: pointer;
@@ -64,6 +62,69 @@ body{
     font-weight: 600;
 }
 
+.endtestdiv{
+  width: 260px;
+  margin-top: 20px;
+  margin-left: 1110px;
+  display: inline-block;
+  position: relative;
+}
+
+#prev button{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border-color: black;
+
+border-width: 1px;
+color: #000000;
+text-align: center;
+font-size: 15px;
+
+width: 90px;
+
+cursor: pointer;
+
+  height: 43px;
+  font-weight: 600;
+}
+.prevdiv{
+  width: 100px;
+  
+  margin-left: 60px;
+  display: inline-block;
+  position: relative;
+}
+#next button{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+ 
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border-color: black;
+
+border-width: 1px;
+color: #000000;
+text-align: center;
+font-size: 15px;
+/* margin-top: 20px; */
+
+width: 90px;
+
+cursor: pointer;
+
+  height: 43px;
+  font-weight: 600;
+}
+.nextdiv{
+  width: 100px;
+  
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+}
 #navbar button:hover{
     background-color: white;
     color:  rgb(42, 57, 101);
@@ -111,7 +172,6 @@ height: 500px;
   
   ul li label{
     display: block;
-    position: relative;
     font-weight: 350;
     font-size: 1.35em;
     padding: 19px 25px 25px 80px;
@@ -152,7 +212,7 @@ height: 500px;
     width: 16px;
     top: 2px;
       left: 2px;
-    margin: auto;
+    
       
   }
   
