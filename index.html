@@ -3,6 +3,7 @@
 <head>
 <title>Quiz App</title>    
 <link rel="stylesheet" type="text/css" href="style.css"> 
+
 </head>
 
 
@@ -16,13 +17,21 @@
     </div>
 
     <div class="hdiv" id= "navbar" >
-        <div><button>PHYSICS</button><button>PHYSICS NUMERIC</button><button>CHEMISTRY</button><button>CHEMISTRY NUMERIC</button><button>MATHS</button><button>MATHS NUMERIC</button></div> 
+        <div>
+          <button class="navActive" onclick="navClick(this); changeToPhy();">PHYSICS</button>
+          <button onclick="navClick(this); changeToPhyNum(); ">PHYSICS NUMERIC</button>
+          <button onclick="navClick(this); changeToChem();">CHEMISTRY</button>
+          <button onclick="navClick(this); changeToChemNum();">CHEMISTRY NUMERIC</button>
+          <button onclick="navClick(this); changeToMath();">MATHS</button>
+          <button onclick="navClick(this)">MATHS NUMERIC</button></div> 
     </div>
-
-    <div class="container" id="ques">
+  <div class="float-container ">
+    <div class="float-child" id="ques">
+      
         <h2 id="q_number">Q1</h2>
-        <p id="question"> A particle undergoes uniform circular motion. About which point on the plane of the circle, will the angular momentum of the particle remain conserved? </p>
-        <ul>
+        <p id="question"> A particle undergoes uniform circular motion. About which point on the 
+          plane of the circle, will the angular momentum of the particle remain conserved? </p>
+        <ul id="listAns">
             <li>
               <input type="radio" id="A" name="answer">
               <label id="option_a" for="A">centre of the circle</label>
@@ -54,13 +63,17 @@
           </ul>
 
     </div> 
+    <div class="float-child1" id="sideNav">
+      
 
+    </div>
+  </div>
     
     <div class="prevdiv" id="prev">
-    <button onclick="prevques()">&larr; Back</button>
+    <button onclick="prevQues()">&larr; Back</button>
     </div>
     <div class="nextdiv" id="next">
-      <button onclick="nextques()">Next &rarr;</button>
+      <button onclick="nextQues()">Next &rarr;</button>
     </div>
     <div class="endtestdiv" id="endtest">
         <button>END TEST</button>
@@ -72,5 +85,7 @@
 
 
 <script src="script.js"></script>
+<script type="text/javascript" src="data.json"></script> 
+
 
 </html>
