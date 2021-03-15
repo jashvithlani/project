@@ -2,7 +2,11 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
-
+button:focus {outline:0 !important;
+}
+.footer{
+  margin-top: 50px;
+}
 #header h2{
     font-family: "Open Sans", sans-serif;
     /* margin-top: 2%; */
@@ -21,6 +25,7 @@ body{
 .hdiv{
     background-color: rgb(42, 57, 101);
     height: 75px;
+    border-radius: 5px;
 }
 #navbar button{
     font-family: "Open Sans", sans-serif;
@@ -30,7 +35,7 @@ body{
 
     
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 2px;
 
   border: none;
   color: #FFFFFF;
@@ -40,8 +45,68 @@ body{
   width: 250px;
   transition: all 0.5s;
   cursor: pointer;
-
-    height: 75px;
+  padding-top: 5px;
+    height: 70px;
+}
+#review button{
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: rgb(109, 206, 30);
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: rgb(109, 206, 30);
+  border-style: solid;
+  text-align: center;
+  font-size: 15px;
+  width: 160px;
+  cursor: pointer;
+  height: 45px;
+ font-weight: 600;
+ margin-left: 10px;
+}
+.review{
+  display: inline-block;
+  position: relative;
+}
+.clearSelect{
+  display: inline-block;
+  position: relative;
+}
+#clearS button{
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: rgb(158, 158, 158);
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: rgb(158, 158, 158);
+  border-style: solid;
+  text-align: center;
+  font-size: 15px;
+  width: 160px;
+  cursor: pointer;
+  height: 45px;
+ font-weight: 600;
+ margin-left: 10px;
+}
+.save{
+  display: inline-block;
+  position: relative;
+}
+#save button{
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: rgb(237, 108, 57);
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: rgb(237, 108, 57);
+  border-style: solid;
+  text-align: center;
+  font-size: 15px;
+  width: 160px;
+  cursor: pointer;
+  height: 45px;
+ font-weight: 600;
+ margin-left: 50px;
 }
 #endtest button{
     font-family: "Open Sans", sans-serif;
@@ -49,7 +114,7 @@ body{
    
     background-color: rgb(237, 108, 57);
     border-radius: 30px;
-  border: none;
+  border-width: 0px;
   color: #FFFFFF;
   text-align: center;
   font-size: 20px;
@@ -61,11 +126,22 @@ body{
     height: 55px;
     font-weight: 600;
 }
+#endtest button:hover{
+  /* border: powderblue; */
+ background-color: white;
+  color: rgb(237, 108, 57);
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: rgb(237, 108, 57);
+  
+  
+}
+
 
 .endtestdiv{
   width: 260px;
   margin-top: 20px;
-  margin-left: 1110px;
+  margin-left: 760px;
   display: inline-block;
   position: relative;
 }
@@ -90,6 +166,16 @@ cursor: pointer;
   height: 43px;
   font-weight: 600;
 }
+#prev button:hover{
+  background-color: black;
+  color: white;
+
+}
+#next button:hover{
+  background-color: black;
+  color: white;
+
+}
 .prevdiv{
   width: 100px;
   
@@ -97,6 +183,7 @@ cursor: pointer;
   display: inline-block;
   position: relative;
 }
+
 #next button{
   font-family: "Open Sans", sans-serif;
   color: rgb(0, 0, 0);
@@ -125,10 +212,17 @@ cursor: pointer;
   display: inline-block;
   position: relative;
 }
-#navbar button:hover{
-    background-color: white;
-    color:  rgb(42, 57, 101);
 
+#navbar button:hover{
+    /* background-color: white;
+    color:  rgb(42, 57, 101); */
+    border-bottom: 5px solid  white;
+
+}
+#navbar .navActive{
+  /* background-color: white; */
+  -webkit-animation: 1s;
+  border-bottom: 5px solid  white;
 }
 #ques h2{
     color: rgb(65, 81, 135);
@@ -139,8 +233,10 @@ cursor: pointer;
 .container{
 margin-top: 100px;
 margin-left: 50px;
-width: 70%;
+width: 60%;
 height: 500px;
+/* float: left; */
+display: inline-block;
 }
 #ques input{
     margin-top: 30px;
@@ -227,3 +323,74 @@ height: 500px;
   input[type=radio]:checked ~ label{
     color: rgb(237, 108, 57);
   }
+.sideNav{
+  display: inline-block;
+  margin-left: 1300px;
+  width: 30%;
+  position: relative;
+  
+}
+.float-container {
+  /* border: 3px solid #fff; */
+  margin-top: 100px;
+margin-left: 50px;
+/* width: 60%; */
+height: 500px;
+/* height: 100%; */
+/* float: left; */
+display: inline-block;
+}
+
+.float-child {
+  width: 1350px;
+  float: left;
+  border-right: 1px solid rgb(102, 102, 102);
+  height: 650px;
+  /* overflow: scroll; */
+  /* padding: 20px; */
+  /* border: 2px solid red; */
+}  
+.float-child1 {
+  border-top: 1px solid rgb(102, 102, 102);
+  width: 320px;
+  float: left;
+  height: 300px; 
+  overflow: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 300px;
+  margin-left: 5px;
+  /* padding-top: 200px; */
+  /* border: 2px solid red; */
+}  
+.sideNavButton{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+ 
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-color: rgb(226, 226, 226);
+  border-style: solid;
+border-width: 0.5px;
+color: #000000;
+text-align: center;
+font-size: 14px;
+/* margin-top: 20px; */
+
+width: 50px;
+margin-left: 19px;
+margin-top: 15px;
+/* padding-left: 50px; */
+cursor: pointer;
+
+  height: 50px;
+  font-weight: 600;
+}
+.sideNavButton:hover{
+  background-color: rgb(226, 226, 226);
+  /* color: rgb(255, 255, 255); */
+}
+.sideNavButton:active{
+  background-color: rgb(138, 138, 138);
+  color: #FFFFFF;
+}

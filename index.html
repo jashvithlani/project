@@ -3,6 +3,7 @@
 <head>
 <title>Quiz App</title>    
 <link rel="stylesheet" type="text/css" href="style.css"> 
+
 </head>
 
 
@@ -12,59 +13,65 @@
     <div id="header">
         <h2>JEE MAIN MOCK TEST 1</h2>
         <h3>Time Left 01:01:01 </h3>
-        
     </div>
 
     <div class="hdiv" id= "navbar" >
-        <div><button>PHYSICS</button><button>PHYSICS NUMERIC</button><button>CHEMISTRY</button><button>CHEMISTRY NUMERIC</button><button>MATHS</button><button>MATHS NUMERIC</button></div> 
     </div>
 
-    <div class="container" id="ques">
-        <h2 id="q_number">Q1</h2>
-        <p id="question"> A particle undergoes uniform circular motion. About which point on the plane of the circle, will the angular momentum of the particle remain conserved? </p>
-        <ul>
-            <li>
-              <input type="radio" id="A" name="answer">
-              <label id="option_a" for="A">centre of the circle</label>
-              
-              <div class="check"></div>
-            </li>
-            
-            <li>
-              <input type="radio" id="B" name="answer">
-              <label id="option_b" for="B">on the circumference of the circle</label>
-              
-              <div class="check"><div class="inside">
-                  </div></div>
-            </li>
-            
-            <li>
-              <input type="radio" id="C" name="answer">
-              <label id="option_c" for="C">inside the circle</label>
-              
-              <div class="check"><div class="inside"></div></div>
-            </li>
-            <li>
-                <input type="radio" id="D" name="answer">
-              <label id="option_d" for="D">outside the circle</label>
-              
-              <div class="check"><div class="inside"></div></div>
-            </li>
 
-          </ul>
+
+  <div class="float-container ">
+    <div class="float-child" >
+      <div id="ques">
+
+      </div>
+       <ul id="listAns">
+          <li id="option_1">
+           
+          </li>
+          
+          
+          <li id="option_2">
+            
+          </li>
+          
+          <li id="option_3">
+            
+          </li>
+          <li id="option_4">
+             
+          </li>
+
+        </ul>
 
     </div> 
+    <div class="float-child1" id="sideNav">
+    </div>
+  </div >
+<div class="preFooter" >
+  <div class="save" id="save">
+    <button onclick="save()" type="button"disabled>Save & Next</button>
+    </div>
+  <div class="review" id="review">
+    <button onclick="review()">Review Later</button>
+    </div>
+  <div class="clearSelect" id="clearS">
+    <button onclick="clearSelection()">Clear Selection</button>
+    </div>
+</div>
 
+  <div class="footer">
     
     <div class="prevdiv" id="prev">
-    <button onclick="prevques()">&larr; Back</button>
+    <button onclick="prevQues()">&larr; Back</button>
     </div>
     <div class="nextdiv" id="next">
-      <button onclick="nextques()">Next &rarr;</button>
+      <button onclick="nextQues()">Next &rarr;</button>
     </div>
     <div class="endtestdiv" id="endtest">
         <button>END TEST</button>
     </div>
+  </div>
     
     
 </body>
@@ -72,5 +79,7 @@
 
 
 <script src="script.js"></script>
+<script type="text/javascript" src="data.json"></script> 
+
 
 </html>
