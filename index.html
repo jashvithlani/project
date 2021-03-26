@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz App</title>    
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="footer.css"> 
+
+<link rel="stylesheet" type="text/css" href="summary.css"> 
+
+</head>
+
+
+<!-- Body code starts here -->
+<body>
+
+    <div id="header">
+        <h2>JEE MAIN MOCK TEST 1</h2>
+        <h3>Time Left 01:01:01 </h3>
+    </div>
+
+    <div class="hdiv" id= "navbar" >
+    </div>
+
+
+
+  <div class="float-container ">
+    <div class="float-child" id="quesAndOptionsContainer" >
+      <!-- <div id="questionContainer">
+
+      </div> -->
+       <!-- <ul id="listAns">
+          <li id="option_1">
+           
+          </li>
+          
+          
+          <li id="option_2">
+            
+          </li>
+          
+          <li id="option_3">
+            
+          </li>
+          <li id="option_4">
+             
+          </li>
+
+        </ul> -->
+
+    </div> 
+    <div class="float-child-1-top" id="sideNavTop">
+      <div class="questionSummary">
+        <div class="answeredQuestions" id="ansCount">00</div>
+        <div class="answeredQuestionsText">Answered</div>
+      </div>
+      <div class="questionSummary">
+        <div class="notAnsweredQuestions">00</div>
+        <div class="notAnsweredQuestionsText">Not Answered</div>
+      </div>
+      <div class="questionSummary">
+        <div class="notVisited">01</div>
+        <div class="notVisitedText">Not Visited</div>
+      </div>
+      <div class="questionSummary">
+        <div class="toBeReviewed" id="reviewCount">00</div>
+        <div class="toBeReviewedText">To be Reviewed</div>
+      </div>
+      <div class="questionSummary">
+        <div class="AnsweredAndtoBeReviewed">00</div>
+        <div class="AnsweredAndtoBeReviewedText">Answered & Review</div>
+      </div>
+    </div>
+    <div class="float-child-1-bottom" id="sideNav">
+    </div>
+  </div >
+<div class="preFooter" >
+  <div class="save" id="save">
+    <button onclick="save()" type="button"disabled>Save & Next</button>
+    </div>
+  <div class="review" id="review">
+    <button id="reviewButton" >Review Later</button>
+    </div>
+  <div class="clearSelect" id="clearS">
+    <button onclick="clearSelection()">Clear Selection</button>
+    </div>
+</div>
+
+  <div class="footer" id="footerButtons">
+    
+
+    
+    
+  </div>
+    
+    
+</body>
+
+
+
+<script src="/model.js" type="module"></script>
+
+<script type="text/javascript" src="/data.json"></script> 
+
+
+</html>

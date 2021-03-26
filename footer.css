@@ -1,0 +1,196 @@
+/* ---------------------------------------------------------------FOOTER--------------------------------------------------------------------- */
+
+.preFooter{
+    margin-top: 100px;
+  }
+
+
+ /* ---------------------------------------------------------------review--------------------------------------------------------------------- */
+ #review button{
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: rgb(109, 206, 30);
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(109, 206, 30);
+    border-style: solid;
+    text-align: center;
+    font-size: 15px;
+    width: 140px;
+    cursor: pointer;
+    height: 35px;
+   font-weight: 600;
+   margin-left: 10px;
+  }
+  .review{
+    display: inline-block;
+    position: relative;
+  }
+
+
+ /* ---------------------------------------------------------------CLEAR SELECTION--------------------------------------------------------------------- */
+  .clearSelect{
+    display: inline-block;
+    position: relative;
+  }
+  #clearS button{
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: rgb(158, 158, 158);
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(158, 158, 158);
+    border-style: solid;
+    text-align: center;
+    font-size: 15px;
+    width: 140px;
+    cursor: pointer;
+    height: 35px;
+   font-weight: 600;
+   margin-left: 10px;
+  }
+
+
+ /* ---------------------------------------------------------------SAVE AND NEXT--------------------------------------------------------------------- */
+  .save{
+    display: inline-block;
+    position: relative;
+  }
+  #save button{
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: rgb(237, 108, 57);
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(237, 108, 57);
+    border-style: solid;
+    text-align: center;
+    font-size: 15px;
+    width: 140px;
+    cursor: pointer;
+    height: 35px;
+   font-weight: 600;
+   margin-left: 50px;
+  }
+
+
+
+
+
+
+
+ /* ---------------------------------------------------------------FOOTER--------------------------------------------------------------------- */
+
+  .footer{
+    margin-top: 0px;
+  }
+
+  /* ---------------------------------------------------------------END TEST--------------------------------------------------------------------- */
+  #endtest button{
+      font-family: "Open Sans", sans-serif;
+      color: rgb(255, 255, 255);
+     
+      background-color: rgb(237, 108, 57);
+      border-radius: 30px;
+    border-width: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    
+    width: 160px;
+    
+    cursor: pointer;
+    
+      height: 55px;
+      font-weight: 600;
+  }
+  #endtest button:hover{
+    /* border: powderblue; */
+   background-color: white;
+    color: rgb(237, 108, 57);
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(237, 108, 57);
+    border: solid;
+    
+  }
+  .endtestdiv{
+    width: 260px;
+    margin-top: 20px;
+    margin-left: 760px;
+    display: inline-block;
+    position: relative;
+  }
+  
+
+  /* ---------------------------------------------------------------BACK BUTTON--------------------------------------------------------------------- */
+  #prev button{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border-color: rgb(206, 206, 206);
+    border-style: solid;
+  border-width: 1px;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  
+  width: 90px;
+  
+  cursor: pointer;
+  
+    height: 38px;
+    font-weight: 600;
+  }
+  #prev button:hover{
+    background-color: black;
+    color: white;
+  
+  }
+  .prevdiv{
+    width: 100px;
+    
+    margin-left: 60px;
+    display: inline-block;
+    position: relative;
+  }
+
+
+  /* ---------------------------------------------------------------NEXT BUTTON--------------------------------------------------------------------- */
+  #next button:hover{
+    background-color: black;
+    color: white;
+  
+  }
+  
+  
+  #next button{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border-color: rgb(206, 206, 206);
+    border-style: solid;
+  border-width: 1px;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  /* margin-top: 20px; */
+  
+  width: 90px;
+  
+  cursor: pointer;
+  
+    height: 38px;
+    font-weight: 600;
+  }
+  .nextdiv{
+    width: 100px;
+    
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+  }
