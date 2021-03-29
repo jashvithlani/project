@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from "./App.js"
 
 
 ReactDOM.render(
+  <App/>,document.getElementById("root")
   
-  <h1>hello,asjdgasjhd</h1>,document.getElementById("navbar")
   
 );
 
