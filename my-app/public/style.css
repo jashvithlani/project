@@ -1,73 +1,73 @@
 
 body{
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 button:focus {outline:0 !important;
 }
 
 #header h2{
-    font-family: "Open Sans", sans-serif;
-    /* margin-top: 2%; */
-    margin-left: 3%;
-    font-size: 30px;
-    display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  /* margin-top: 2%; */
+  margin-left: 3%;
+  font-size: 30px;
+  display: inline-block;
 }
 #header h3{
-    margin-left: 55%;
-    /* margin-top: -1%; */
-    font-size: 25px;
-    display: inline-block;
-    color: rgb(73, 73, 73);
+  margin-left: 55%;
+  /* margin-top: -1%; */
+  font-size: 25px;
+  display: inline-block;
+  color: rgb(73, 73, 73);
 
 }
 .hdiv{
-    background-color: rgb(42, 57, 101);
-    height: 55px;
-    border-radius: 5px;
+  background-color: rgb(42, 57, 101);
+  height: 55px;
+  border-radius: 5px;
 }
 #navbar button{
-    font-family: "Open Sans", sans-serif;
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
 
-    
-    background-color: transparent;
-    border-radius: 2px;
+  
+  background-color: transparent;
+  border-radius: 2px;
 
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 13px;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 13px;
 
-  width: auto;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding-top: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-    height: 50px;
-    margin-left: 10px;
+width: auto;
+transition: all 0.5s;
+cursor: pointer;
+padding-top: 5px;
+padding-left: 30px;
+padding-right: 30px;
+  height: 50px;
+  margin-left: 10px;
 }
 
 
 #navbar button:hover{
-    /* background-color: white;
-    color:  rgb(42, 57, 101); */
-    border-bottom: 5px solid  white;
+  /* background-color: white;
+  color:  rgb(42, 57, 101); */
+  border-bottom: 5px solid  white;
 
 }
 #navbar .navActive{
-  /* background-color: white; */
-  -webkit-animation: 1s;
-  border-bottom: 5px solid  white;
+/* background-color: white; */
+-webkit-animation: 1s;
+border-bottom: 5px solid  white;
 }
-#ques h2{
-    color: rgb(65, 81, 135);
-    font-size: 21px;
+#questionContainer h2{
+  color: rgb(65, 81, 135);
+  font-size: 21px;
 }
-#ques p{
-    font-size: 20px;
+#questionContainer p{
+  font-size: 20px;
 }
 .container{
 margin-top: 100px;
@@ -77,102 +77,102 @@ height: 500px;
 /* float: left; */
 display: inline-block;
 }
-#ques input{
-    margin-top: 30px;
-    
+#questionContainer input{
+  margin-top: 30px;
+  
 }
-#ques label{
-    
-    border-radius: 10px;
-    height: 100px;
+#questionContainer label{
+  
+  border-radius: 10px;
+  height: 100px;
 }
 
 
 
-  
-  ul li{
-    color: #000000;
-    display: block;
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 50px;
-      
-  }
-  
-  ul li input[type=radio]{
-    position: absolute;
-    visibility: hidden;
-  }
-  
-  ul li label{
-    display: block;
-    font-weight: 350;
-    font-size: 19px;
-    padding: 19px 25px 5px 80px;
-    margin: 10px;
-    margin-left: -50px;
-    height: 10px;
-    /* left: -100px; */
-    cursor: pointer;
-    -webkit-transition: all 0.25s linear;
-  }
-  
-  ul li:hover label{
-      color:rgb(233, 138, 100);
-  }
-  
-  ul li .check{
-    display: block;
-    position: absolute;
-    border: 2px solid #000000;
-    border-radius: 100%;
-    height: 14px;
-    width: 14px;
-    top: 35px;
-    left: -10px;
-    -webkit-transition: all 0.25s linear;
-      
-  }
-  
-  ul li:hover .check {
-    border: 2px solid rgb(233, 138, 100);
-  }
-  
-  ul li .check::before {
-    display: block;
-    position: absolute;
-      content: '';
-    border-radius: 100%;
-    height: 10px;
-    width: 10px;
-    top: 2px;
-      left: 2px;
-    
-      
-  }
-  
-  input[type=radio]:checked ~ .check {
-    border:  2px solid rgb(237, 108, 57);
-  }
-  
-  input[type=radio]:checked ~ .check::before{
-    background: rgb(237, 108, 57);
-  }
-  
-  input[type=radio]:checked ~ label{
-    color: rgb(237, 108, 57);
-  }
-.sideNav{
-  display: inline-block;
-  margin-left: 1300px;
-  width: 30%;
+
+ul li{
+  color: #000000;
+  display: block;
   position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+    
+}
+
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label{
+  display: block;
+  font-weight: 350;
+  font-size: 19px;
+  padding: 19px 25px 5px 80px;
+  margin: 10px;
+  margin-left: -50px;
+  height: 10px;
+  /* left: -100px; */
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+ul li:hover label{
+    color:rgb(233, 138, 100);
+}
+
+ul li .check{
+  display: block;
+  position: absolute;
+  border: 2px solid #000000;
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  top: 35px;
+  left: -10px;
+  -webkit-transition: all 0.25s linear;
+    
+}
+
+ul li:hover .check {
+  border: 2px solid rgb(233, 138, 100);
+}
+
+ul li .check::before {
+  display: block;
+  position: absolute;
+    content: '';
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  top: 2px;
+    left: 2px;
   
+    
+}
+
+input[type=radio]:checked ~ .check {
+  border:  2px solid rgb(237, 108, 57);
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: rgb(237, 108, 57);
+}
+
+input[type=radio]:checked ~ label{
+  color: rgb(237, 108, 57);
+}
+.sideNav{
+display: inline-block;
+margin-left: 1300px;
+width: 30%;
+position: relative;
+
 }
 .float-container {
-  /* border: 3px solid #fff; */
-  margin-top: 100px;
+/* border: 3px solid #fff; */
+margin-top: 100px;
 margin-left: 50px;
 /* width: 60%; */
 height: 500px;
@@ -182,51 +182,51 @@ display: inline-block;
 }
 
 .float-child {
-  width: 1450px;
-  float: left;
-  border-right: 1px solid rgb(102, 102, 102);
-  padding-bottom: 240px;
-  height: auto;
-  border-bottom: 1px solid rgb(102, 102, 102);
-  /* overflow: scroll; */
-  /* padding: 20px; */
-  /* border: 2px solid red; */
+width: 1450px;
+float: left;
+border-right: 1px solid rgb(102, 102, 102);
+padding-bottom: 240px;
+height: auto;
+border-bottom: 1px solid rgb(102, 102, 102);
+/* overflow: scroll; */
+/* padding: 20px; */
+/* border: 2px solid red; */
 }  
 .float-child-1-top {
-  /* border-top: 1px solid rgb(102, 102, 102); */
-  width: 250px;
-  float: left;
-  height: 240px; 
-  overflow: auto;
-  padding-left: 10px;
-  padding-top: 10px;
-  /* margin-top: 300px; */
-  margin-left: 5px;
-  margin-bottom: 12px;
-  /* padding-top: 200px; */
-  /* border: 2px solid red; */
+/* border-top: 1px solid rgb(102, 102, 102); */
+width: 250px;
+float: left;
+height: 240px; 
+overflow: auto;
+padding-left: 10px;
+padding-top: 10px;
+/* margin-top: 300px; */
+margin-left: 5px;
+margin-bottom: 12px;
+/* padding-top: 200px; */
+/* border: 2px solid red; */
 }  
 .float-child-1-bottom {
-  border-top: 1px solid rgb(102, 102, 102);
-  width: 250px;
-  float: left;
-  height: 290px; 
-  overflow: auto;
-  padding-left: 10px;
-  padding-top: 10px;
-  /* margin-top: 300px; */
-  margin-left: 5px;
-  /* padding-top: 200px; */
-  /* border: 2px solid red; */
+border-top: 1px solid rgb(102, 102, 102);
+width: 250px;
+float: left;
+height: 290px; 
+overflow: auto;
+padding-left: 10px;
+padding-top: 10px;
+/* margin-top: 300px; */
+margin-left: 5px;
+/* padding-top: 200px; */
+/* border: 2px solid red; */
 }  
 .sideNavButton{
-  font-family: "Open Sans", sans-serif;
-  color: rgb(0, 0, 0); 
- 
-  background-color: rgb(255, 255, 255); 
-  border-radius: 10px;
-  border-color: rgb(226, 226, 226); 
-  border-style: solid;
+font-family: "Open Sans", sans-serif;
+color: rgb(0, 0, 0); 
+
+background-color: rgb(255, 255, 255); 
+border-radius: 10px;
+border-color: rgb(226, 226, 226); 
+border-style: solid;
 border-width: 0.5px;
 color: #000000;
 text-align: center;
@@ -239,26 +239,26 @@ margin-top: 15px;
 /* padding-left: 50px; */
 cursor: pointer;
 
-  height: 40px;
-  font-weight: 600;
+height: 40px;
+font-weight: 600;
 }
 .sideNavButton:hover{
-  background-color: rgb(226, 226, 226); 
-  /* color: rgb(255, 255, 255); */
+background-color: rgb(226, 226, 226); 
+/* color: rgb(255, 255, 255); */
 }
 .sideNavButton:active{
-  background-color: rgb(138, 138, 138); 
-  color: #FFFFFF; 
+background-color: rgb(138, 138, 138); 
+color: #FFFFFF; 
 }
 .sideNavButtonAnswered{
 
 font-family: "Open Sans", sans-serif;
-  color: rgb(0, 0, 0); 
- 
-  background-color: rgb(42, 98, 161); 
-  border-radius: 10px;
-  border-color: rgb(226, 226, 226); 
-  border-style: solid;
+color: rgb(0, 0, 0); 
+
+background-color: rgb(42, 98, 161); 
+border-radius: 10px;
+border-color: rgb(226, 226, 226); 
+border-style: solid;
 border-width: 0.5px;
 color: #000000;
 text-align: center;
@@ -271,57 +271,57 @@ margin-top: 15px;
 /* padding-left: 50px; */
 cursor: pointer;
 
-  height: 40px;
-  font-weight: 600;
+height: 40px;
+font-weight: 600;
 }
 
 
 .sideNavButtonToBeReviewed{
 
+font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0); 
+ 
+  background-color: rgb(147, 204, 100); 
+  border-radius: 10px;
+  border-color: rgb(226, 226, 226); 
+  border-style: solid;
+border-width: 0.5px;
+color: #000000;
+text-align: center;
+font-size: 14px;
+/* margin-top: 20px; */
+
+width: 40px;
+margin-left: 19px;
+margin-top: 15px;
+/* padding-left: 50px; */
+cursor: pointer;
+
+  height: 40px;
+  font-weight: 600;
+}
+
+.sideNavButtonAnsweredAndReview{
   font-family: "Open Sans", sans-serif;
-    color: rgb(0, 0, 0); 
-   
-    background-color: rgb(147, 204, 100); 
-    border-radius: 10px;
-    border-color: rgb(226, 226, 226); 
-    border-style: solid;
-  border-width: 0.5px;
-  color: #000000;
-  text-align: center;
-  font-size: 14px;
-  /* margin-top: 20px; */
-  
-  width: 40px;
-  margin-left: 19px;
-  margin-top: 15px;
-  /* padding-left: 50px; */
-  cursor: pointer;
-  
-    height: 40px;
-    font-weight: 600;
-  }
+  color: rgb(0, 0, 0); 
+ 
+  background-color: rgb(42, 98, 161); 
+  border-radius: 10px;
+  border-color: rgb(147, 204, 100); 
+  border-style: solid;
+border-width: 4px;
+color: #000000;
+text-align: center;
+font-size: 14px;
+/* margin-top: 20px; */
 
-  .sideNavButtonAnsweredAndReview{
-    font-family: "Open Sans", sans-serif;
-    color: rgb(0, 0, 0); 
-   
-    background-color: rgb(237, 108, 57); 
-    border-radius: 10px;
-    border-color: rgb(226, 226, 226); 
-    border-style: solid;
-  border-width: 0.5px;
-  color: #000000;
-  text-align: center;
-  font-size: 14px;
-  /* margin-top: 20px; */
-  
-  width: 40px;
-  margin-left: 19px;
-  margin-top: 15px;
-  /* padding-left: 50px; */
-  cursor: pointer;
-  
-    height: 40px;
-    font-weight: 600;
+width: 40px;
+margin-left: 19px;
+margin-top: 15px;
+/* padding-left: 50px; */
+cursor: pointer;
 
-  }
+  height: 40px;
+  font-weight: 600;
+
+}
