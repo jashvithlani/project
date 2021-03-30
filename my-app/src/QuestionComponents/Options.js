@@ -1,16 +1,20 @@
-import CreateOptions from"./CreateOptions.js"
+import CreateOptions from "./CreateOptions.js";
 
 function Options(props) {
+  const currQ = props.currentQuestion;
+  const ans = props.currentAnswers[currQ.id];
+  // console.log(props.currentQuestion);
+  const options = props.currentQuestion.options.map((ele, index) => {
+    return (
+      <CreateOptions
+        key={ele.id}
+        option={ele}
+        onClickOption={props.onClickOption}
+        ans={ans}
+      />
+    );
+  });
 
-    // console.log(props.currentQuestion);
-    const options=props.currentQuestion.options.map((ele,index)=>{
-        
-        return (<CreateOptions  key={ele.id} option={ele} onClickOption={props.onClickOption}/>);
-    });
-
-
-  return (<ul id="listAns">
-      {options}
-  </ul>);
+  return <ul id="listAns">{options}</ul>;
 }
 export default Options;
