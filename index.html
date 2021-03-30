@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Quiz App</title>    
+<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+
+<!-- Body code starts here -->
+<body>
+
+    <div id="header">
+        <h2>JEE MAIN MOCK TEST 1</h2>
+        <h3>Time Left 01:01:01 </h3>
+        
+    </div>
+
+    <div class="hdiv" id= "navbar" >
+        <div><button>PHYSICS</button><button>PHYSICS NUMERIC</button><button>CHEMISTRY</button><button>CHEMISTRY NUMERIC</button><button>MATHS</button><button>MATHS NUMERIC</button></div> 
+    </div>
+
+    <div class="container" id="ques">
+        <h2 id="q_number">Q1</h2>
+        <p id="question"> A particle undergoes uniform circular motion. About which point on the plane of the circle, will the angular momentum of the particle remain conserved? </p>
+        <ul>
+            <li>
+              <input type="radio" id="A" name="answer">
+              <label id="option_a" for="A">centre of the circle</label>
+              
+              <div class="check"></div>
+            </li>
+            
+            <li>
+              <input type="radio" id="B" name="answer">
+              <label id="option_b" for="B">on the circumference of the circle</label>
+              
+              <div class="check"><div class="inside">
+                  </div></div>
+            </li>
+            
+            <li>
+              <input type="radio" id="C" name="answer">
+              <label id="option_c" for="C">inside the circle</label>
+              
+              <div class="check"><div class="inside"></div></div>
+            </li>
+            <li>
+                <input type="radio" id="D" name="answer">
+              <label id="option_d" for="D">outside the circle</label>
+              
+              <div class="check"><div class="inside"></div></div>
+            </li>
+
+          </ul>
+
+    </div> 
+
+    
+    <div class="prevdiv" id="prev">
+    <button onclick="prevques()">&larr; Back</button>
+    </div>
+    <div class="nextdiv" id="next">
+      <button onclick="nextques()">Next &rarr;</button>
+    </div>
+    <div class="endtestdiv" id="endtest">
+        <button>END TEST</button>
+    </div>
+    
+    
+</body>
+
+
+
+<script>
+
+
+  var myObj, myJSON, text, obj;
+  
+  // Storing data:
+  obj =  [
+    {
+    ques:"this is question 1",
+    A:"option A q1",
+    B:"option B q1",
+    C:"option C q1",
+    D:"option D q1"
+    },
+
+    {
+      ques:"this is question 2",
+    A:"option A q2",
+    B:"option B q2",
+    C:"option C q2",
+    D:"option D q2"
+    },
+
+    {
+      ques:"this is question 3",
+    A:"option A q3",
+    B:"option B q3",
+    C:"option C q3",
+    D:"option D q3"
+    },
+
+    {
+      ques:"this is question 4",
+    A:"option A q4",
+    B:"option B q4",
+    C:"option C q4",
+    D:"option D q4"
+    },
+    {
+      ques:"this is question 5",
+    A:"option A q5",
+    B:"option B q5",
+    C:"option C q5",
+    D:"option D q5"
+    }
+  
+  ] ;
+
+
+  function qonscreen(i)
+{
+  var t=i+1;
+  document.getElementById("q_number").innerHTML="Q"+t
+  document.getElementById("question").innerHTML=obj[i].ques;
+  document.getElementById("option_a").innerHTML=obj[i].A;
+  document.getElementById("option_b").innerHTML=obj[i].B;
+  document.getElementById("option_c").innerHTML=obj[i].C;
+  document.getElementById("option_d").innerHTML=obj[i].D;
+}
+var i=0;
+qonscreen(i);
+
+function nextques()
+{
+  if(i<obj.length-1)
+  i++;
+  qonscreen(i);
+
+}
+
+
+function prevques()
+{
+  if(i>0)
+  i--;
+  qonscreen(i);
+}
+
+  // myJSON = JSON.stringify(myObj);
+  // localStorage.setItem("testJSON", myJSON);
+  
+  // // Retrieving data:
+  // text = localStorage.getItem("testJSON");
+  // obj = JSON.parse(text);
+  </script>
+
+</html>
