@@ -1,3 +1,4 @@
+import Button from "./../Button";
 function CreateButton(props) {
   if (
     (props.currentAnswers[props.id] == null ||
@@ -5,13 +6,12 @@ function CreateButton(props) {
     props.reviewQuestions[props.id] == false
   ) {
     return (
-      <button
-        onClick={props.handleClick}
+      <Button
+        onclick={props.handleClick}
         id={props.id}
-        className="sideNavButton"
-      >
-        Q{props.id + 1}
-      </button>
+        classname={"sideNavButton"}
+        text={'Q'+(props.id + 1)}/>
+      
     );
   } else if (
     (props.currentAnswers[props.id] == null ||
@@ -19,9 +19,12 @@ function CreateButton(props) {
     props.reviewQuestions[props.id] == true
   ) {
     return (
-      <button id={props.id} className="sideNavButtonToBeReviewed">
-        Q{props.id + 1}
-      </button>
+      
+       <Button
+       onclick={props.handleClick}
+       id={props.id}
+       classname={"sideNavButtonToBeReviewed"}
+       text={'Q'+(props.id + 1)}/>
     );
   } else if (
     props.currentAnswers[props.id] != null &&
@@ -29,15 +32,21 @@ function CreateButton(props) {
     props.reviewQuestions[props.id] == false
   ) {
     return (
-      <button id={props.id} className="sideNavButtonAnswered">
-        Q{props.id + 1}
-      </button>
+      
+      <Button
+      onclick={props.handleClick}
+      id={props.id}
+      classname={"sideNavButtonAnswered"}
+      text={'Q'+(props.id + 1)}/>
     );
   } else {
     return (
-      <button id={props.id} className="sideNavButtonAnsweredAndReview">
-        Q{props.id + 1}
-      </button>
+      
+      <Button
+      onclick={props.handleClick}
+      id={props.id}
+      classname={"sideNavButtonAnsweredAndReview"}
+      text={'Q'+(props.id + 1)}/>
     );
   }
 }

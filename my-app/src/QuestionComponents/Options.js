@@ -3,7 +3,7 @@ import CreateOptions from "./CreateOptions.js";
 function Options(props) {
   const currQ = props.currentQuestion;
   const ans = props.currentAnswers[currQ.id];
-  // console.log(props.currentQuestion);
+
   const options = props.currentQuestion.options.map((ele, index) => {
     return (
       <CreateOptions

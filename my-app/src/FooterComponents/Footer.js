@@ -1,19 +1,15 @@
+import Button from "./../Button";
 function Footer(props) {
   return (
     <div className="footer" id="footerButtons">
       <div className="prevdiv" id="prev">
-        <button onClick={props.handlePrevButtonClick} id="prevButton">
-          ← Back
-        </button>
+        <Button text={"← Back"} onclick={props.handlePrevButtonClick} />
       </div>
-
       <div className="nextdiv" id="next">
-        <button onClick={props.handleNextButtonClick} id="nextButton">
-          Next →
-        </button>
+        <Button text={"Next →"} onclick={props.handleNextButtonClick} />
       </div>
       <div className="endtestdiv" id="endtest">
-        <button>END TEST</button>
+        <Button text={"END TEST"} />
       </div>
     </div>
   );

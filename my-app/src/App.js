@@ -114,7 +114,7 @@ class App extends Component {
   handleReviewButtonClick = () => {
     const currId = this.state.currentQuestion.id;
     let review = this.state.reviewQuestions;
-    review[currId] = true;
+    review[currId] = !review[currId];
 
     this.setState({
       reviewQuestions: review,

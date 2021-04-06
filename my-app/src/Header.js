@@ -1,22 +1,26 @@
-import TimerCountDown from "./TimerCountDown"
+import TimerCountDown from "./TimerCountDown";
+import Button from "./Button";
+
 function Header(props) {
   const navBarButtons = props.sections.map((section) => {
     if (section.key == props.currSection) {
       return (
-        <button
-          onClick={props.changeSection}
+        <Button
+          onclick={props.changeSection}
           id={section.key}
           key={section.key}
-          className="navActive"
-        >
-          {section.text}
-        </button>
+          classname="navActive"
+          text={section.text}
+        />
       );
     }
     return (
-      <button onClick={props.changeSection} id={section.key} key={section.key}>
-        {section.text}
-      </button>
+      <Button
+        onclick={props.changeSection}
+        id={section.key}
+        key={section.key}
+        text={section.text}
+      />
     );
   });
 
@@ -24,8 +28,7 @@ function Header(props) {
     <div>
       <div id="header">
         <h2>JEE MAIN MOCK TEST 1</h2>
-         <TimerCountDown/>
-
+        <TimerCountDown />
       </div>
 
       <div className="hdiv" id="navbar">

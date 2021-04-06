@@ -1,18 +1,15 @@
+import Button from "./../Button";
 function PreFooter(props) {
   return (
     <div className="preFooter">
       <div className="save" id="save">
-        <button type="button" disabled>
-          Save &amp; Next
-        </button>
+        <Button text={"Save & Next"} />
       </div>
       <div className="review" id="review">
-        <button onClick={props.handleReviewButtonClick} id="reviewButton">
-          Review Later
-        </button>
+        <Button text={"Review Later"} onclick={props.handleReviewButtonClick} />
       </div>
       <div className="clearSelect" id="clearS">
-        <button onClick={props.handleClearSelectionClick}>Clear Selection</button>
+        <Button text={"Clear Selection"} onclick={props.handleClearSelectionClick} />
       </div>
     </div>
   );
